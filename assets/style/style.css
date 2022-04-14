@@ -6,11 +6,12 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 25px 10px;
+  padding: 5px 10px;
   align-items: center;
-  padding: fixed;
+  position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .content {
@@ -22,6 +23,7 @@ header {
   color: red;
   font-size: 36px;
   font-weight: bold;
+  margin-right: 20px;
 }
 .content a {
   text-decoration: none;
@@ -29,13 +31,71 @@ header {
 }
 
 .user img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+
+.spotligth {
+  position: relative;
+}
+
+.spotligth img {
+  width: 100%;
+  filter: brightness(80%);
+}
+
+.info-spotligth {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  color: white;
+}
+
+.info-spotligth h3 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.info-spotligth h3 span {
+  color: red;
+  font-weight: bold;
+}
+
+.info-spotligth h2 {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.info-spotligth h4 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.info-spotligth p {
+  font-size: 18px;
+  margin-bottom: 5px;
+  width: 400px;
+}
+
+.info-spotligth button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.play {
+  color: black;
+  background-color: white;
+}
+
+.more-infos {
+  background-color: rgb(56, 56, 56);
+  color: white;
+}
+
+.more-infos span {
+  font-size: 11px;
 }
